@@ -8,26 +8,24 @@
   "scripts": {
     "build": "            bunup",
     "dev": "              bunup --watch",
-    "test:uvu": "         uvu -r tsx tests-uvu",
     "test:node": "        node --import=tsx --test tests/*.test.ts",
     "test:node:watch": "  node --import=tsx --test --watch tests/*.test.ts",
     "test": "             npm run test:node",
     "test:watch": "       npm run test:node:watch",
-    "version": "          npm version patch"
+    "version": "          npm version patch && npm run version && git push && git push --tags",
+    "release": "          npm run build && npm run test && npm run version && npm publish"
   },
   "devDependencies": {
     "@types/node": "^24.9.1",
     "bunup": "^0.15.12",
     "tsx": "^4.20.6",
-    "typescript": "5.9.3",
-    "uvu": "^0.5.6"
+    "typescript": "5.9.3"
   },
   "//": "///////////========================/////////========================/////////========================/////////",
   "files": [
     "lib",
     "cjs",
-    "README.md",
-    "LICENCE"
+    "README.md"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
