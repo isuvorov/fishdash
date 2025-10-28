@@ -1,8 +1,7 @@
 {
   "type": "module",
-  "name": "2dollars",
-  "name2": "fishdash",
-  "version": "1.0.3",
+  "name": "fishdash",
+  "version": "0.0.1",
   "description": "Functional utility library for modern TypeScript, ESM, ES6+",
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
   "private": false,
@@ -142,7 +141,7 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npjs.org/"
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "utility",
