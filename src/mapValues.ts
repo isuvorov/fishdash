@@ -1,4 +1,4 @@
-import { ObjectLike, ObjectMapper } from './types.js';
+import { ObjectLike, ObjectMapper } from './types';
 
 export const mapValues = <T>(
   object: ObjectLike<T>,

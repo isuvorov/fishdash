@@ -1,5 +1,5 @@
 import { pickBy } from './pickBy.js';
-// import { NonNullable } from './types.js';
+// import { NonNullable } from './types';
 
 export const omitNull = <T extends Record<string, any>>(
   obj: T,

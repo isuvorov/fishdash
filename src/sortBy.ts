@@ -1,4 +1,4 @@
-import { ObjectMapper } from './types.js';
+import { ObjectMapper } from './types';
 
 export const sortBy = <T>(arr: Array<T>, filter: ObjectMapper<T>) =>
   arr.sort((a, b) => filter(a) - filter(b));
