@@ -12,7 +12,7 @@
     "test:node:watch": "  node --import=tsx --test --watch tests/*.test.ts",
     "test": "             npm run test:node",
     "test:watch": "       npm run test:node:watch",
-    "version:release": "  npm version patch && npm run version && git push && git push --tags",
+    "version:release": "  npm version patch && git push && git push --tags",
     "release": "          npm run build && npm run test && npm run version:release && npm publish"
   },
   "devDependencies": {
