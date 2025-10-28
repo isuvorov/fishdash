@@ -6,13 +6,21 @@
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
   "private": false,
   "scripts": {
-    "build": "bunup",
-    "dev": "bunup --watch"
+    "build": "            bunup",
+    "dev": "              bunup --watch",
+    "test:uvu": "         uvu -r tsx tests-uvu",
+    "test:node": "        node --import=tsx --test tests/*.test.ts",
+    "test:node:watch": "  node --import=tsx --test --watch tests/*.test.ts",
+    "test": "             npm run test:node",
+    "test:watch": "       npm run test:node:watch",
+    "version": "          npm version patch"
   },
   "devDependencies": {
-    "@types/node": "^20.10.3",
+    "@types/node": "^24.9.1",
     "bunup": "^0.15.12",
-    "typescript": "5.3.2"
+    "tsx": "^4.20.6",
+    "typescript": "5.9.3",
+    "uvu": "^0.5.6"
   },
   "//": "///////////========================/////////========================/////////========================/////////",
   "files": [

@@ -7,6 +7,7 @@ import { fromPairs } from './fromPairs';
 import { groupBy } from './groupBy';
 import { isPlainObject } from './isPlainObject';
 import { keyBy } from './keyBy';
+import { keyByFn } from './keyByFn';
 import { map } from './map';
 import { mapValues } from './mapValues';
 import { maxBy } from './maxBy';
@@ -52,6 +53,7 @@ export {
   uniq,
   uniqBy,
   keyBy,
+  keyByFn,
 };
 export default {
   any,
@@ -78,4 +80,5 @@ export default {
   uniq,
   uniqBy,
   keyBy,
+  keyByFn,
 };
