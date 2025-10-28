@@ -12,8 +12,8 @@
     "test:node:watch": "  node --import=tsx --test --watch tests/*.test.ts",
     "test": "             npm run test:node",
     "test:watch": "       npm run test:node:watch",
-    "_version": "          npm version patch && npm run version && git push && git push --tags",
-    "release": "          npm run build && npm run test && npm run version && npm publish"
+    "version:release": "  npm version patch && npm run version && git push && git push --tags",
+    "release": "          npm run build && npm run test && npm run version:release && npm publish"
   },
   "devDependencies": {
     "@types/node": "^24.9.1",
