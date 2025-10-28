@@ -1,7 +1,8 @@
 {
   "type": "module",
-  "name": "fishdash",
-  "version": "0.0.5",
+  "name": "2dollars",
+  "name2": "fishdash",
+  "version": "1.0.3",
   "description": "Functional utility library for modern TypeScript, ESM, ES6+",
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
   "private": false,
