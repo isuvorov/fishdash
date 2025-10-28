@@ -1,5 +1,5 @@
-import { test, describe } from 'node:test';
 import * as assert from 'node:assert';
+import { describe, test } from 'node:test';
 
 import { isPlainObject } from '../src';
 
@@ -17,15 +17,17 @@ describe('isPlainObject', () => {
       // @ts-ignore
       this.abc = {};
     }
-  assert.ok(!isPlainObject(/foo/));
-  assert.ok(!isPlainObject(() => {}));
   // eslint-disable-next-line prefer-arrow-callback
-  assert.ok(!isPlainObject(function () {}));
-  assert.ok(!isPlainObject(1));
-  assert.ok(!isPlainObject(['foo', 'bar']));
-  assert.ok(!isPlainObject([]));
   // @ts-ignore
-  assert.ok(!isPlainObject(new Foo()));
-  assert.ok(!isPlainObject(null));
+    assert.ok(!isPlainObject(/foo/));
+    assert.ok(!isPlainObject(() => {}));
+    // eslint-disable-next-line prefer-arrow-callback
+    assert.ok(!isPlainObject(() => {}));
+    assert.ok(!isPlainObject(1));
+    assert.ok(!isPlainObject(['foo', 'bar']));
+    assert.ok(!isPlainObject([]));
+    // @ts-expect-error
+    assert.ok(!isPlainObject(new Foo()));
+    assert.ok(!isPlainObject(null));
   });
 });

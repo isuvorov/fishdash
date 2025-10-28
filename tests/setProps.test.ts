@@ -1,5 +1,5 @@
-import { test, describe } from 'node:test';
 import * as assert from 'node:assert';
+import { describe, test } from 'node:test';
 
 import { setProps } from '../src';
 
@@ -9,7 +9,7 @@ describe('setProps', () => {
     const input2 = { two: 4, three: 6 };
     const input3 = { three: 9, four: 12 };
     const results = setProps({}, input, input2, input3);
-  assert.deepStrictEqual(results, {
+    assert.deepStrictEqual(results, {
       one: 1,
       two: 4,
       three: 9,

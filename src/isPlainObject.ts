@@ -22,7 +22,7 @@ export const isPlainObject = (o: any): boolean => {
 
   // If constructor does not have an Object-specific method
   // eslint-disable-next-line no-prototype-builtins
-  if (prot.hasOwnProperty('isPrototypeOf') === false) {
+  if (Object.hasOwn(prot, 'isPrototypeOf') === false) {
     return false;
   }
 

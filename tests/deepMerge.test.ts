@@ -1,5 +1,5 @@
-import { test, describe } from 'node:test';
 import * as assert from 'node:assert';
+import { describe, test } from 'node:test';
 
 import { deepMerge } from '../src';
 
@@ -49,6 +49,6 @@ describe('deepMerge', () => {
     };
 
     const results = deepMerge(input1, input2);
-  assert.deepStrictEqual(results, output);
+    assert.deepStrictEqual(results, output);
   });
 });

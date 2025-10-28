@@ -1,4 +1,4 @@
-import { ObjectMapper } from './types';
+import type { ObjectMapper } from './types';
 
 // export type Mapper<T> = (value?: T, key?: string, arr?: Array<T>) => any;
 

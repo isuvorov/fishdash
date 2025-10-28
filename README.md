@@ -8,11 +8,10 @@
 [![Ask me in Telegram](https://img.shields.io/badge/Ask%20me%20in-Telegram-brightblue.svg)](https://t.me/isuvorov)
 
 <div align="center">
-  <img src="https://isuvorov.github.io/fishdash/logo.png" align="right" width="120" height="120" />
+  <img src="https://github.com/isuvorov/fishdash/raw/main/docs/logo.png" align="right" width="120" height="120" />
   <p>Modern utility library inspired by Lodash, built with <strong>ESM6</strong> and <strong>TypeScript</strong></p>
 </div>
 
-[![npm version](https://img.shields.io/npm/v/fishdash.svg)](https://www.npmjs.com/package/fishdash)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/fishdash)](https://bundlephobia.com/package/fishdash)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![ESM](https://img.shields.io/badge/ESM-Ready-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
