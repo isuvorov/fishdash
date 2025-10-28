@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "fishdash",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Functional utility library for modern TypeScript, ESM, ES6+",
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
   "private": false,
@@ -12,7 +12,7 @@
     "test:node:watch": "  node --import=tsx --test --watch tests/*.test.ts",
     "test": "             npm run test:node",
     "test:watch": "       npm run test:node:watch",
-    "version": "          npm version patch && npm run version && git push && git push --tags",
+    "_version": "          npm version patch && npm run version && git push && git push --tags",
     "release": "          npm run build && npm run test && npm run version && npm publish"
   },
   "devDependencies": {
