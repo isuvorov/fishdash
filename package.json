@@ -132,7 +132,10 @@
     }
   ],
   "///": "//////////========================/////////========================/////////========================/////////",
-  "repository": "https://github.com/isuvorov/fishdash",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isuvorov/fishdash.git"
+  },
   "homepage": "https://github.com/isuvorov/fishdash",
   "bugs": "https://github.com/isuvorov/fishdash/issues",
   "license": "MIT",
