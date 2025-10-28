@@ -1,19 +1,16 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import { suite } from 'uvu';
-import * as assert from 'uvu/assert';
+import { test, describe } from 'node:test';
+import * as assert from 'node:assert';
 
 import { fromPairs } from '../src';
 
-const test = suite('fromPairs');
-
-test('check values', () => {
-  const input: Array<[string, number]> = [
-    ['one', 1],
-    ['two', 2],
-    ['three', 3],
-  ];
-  const results = fromPairs(input);
-  assert.equal(results, { one: 1, two: 2, three: 3 });
+describe('fromPairs', () => {
+  test('check values', () => {
+    const input = [
+      ['one', 1],
+      ['two', 2],
+      ['three', 3],
+    ];
+    const results = fromPairs(input);
+  assert.deepStrictEqual(results, { one: 1, two: 2, three: 3 });
+  });
 });
-
-test.run();
