@@ -1,0 +1,148 @@
+{
+  "name": "fishdash",
+  "version": "0.0.1",
+  "description": "Functional utility library for modern TypeScript, ESM, ES6+",
+  "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
+  "private": false,
+  "scripts": {
+    "build": "bunup",
+    "dev": "bunup --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.3",
+    "bunup": "^0.15.12",
+    "typescript": "5.3.2"
+  },
+  "//": "///////////========================/////////========================/////////========================/////////",
+  "files": [
+    "lib",
+    "cjs",
+    "README.md",
+    "LICENCE"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./*": {
+      "import": "./lib/*.js",
+      "types": "./lib/*.d.ts",
+      "default": "./lib/*.js"
+    }
+  },
+  "size-limit": [
+    {
+      "path": "lib/index.js",
+      "limit": "1.4kb"
+    },
+    {
+      "path": "lib/any.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/count.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/countBy.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/each.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/every.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/fromPairs.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/isPlainObject.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/map.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/mapValues.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/omit.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/omitBy.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/omitNull.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/pad.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/pick.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/pickBy.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/set.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/setProps.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/toPairs.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/types.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/uniq.js",
+      "limit": "1kb"
+    },
+    {
+      "path": "lib/uniqBy.js",
+      "limit": "1kb"
+    }
+  ],
+  "///": "//////////========================/////////========================/////////========================/////////",
+  "repository": "https://github.com/isuvorov/fishdash",
+  "homepage": "https://github.com/isuvorov/fishdash",
+  "bugs": "https://github.com/isuvorov/fishdash/issues",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "utility",
+    "library",
+    "typescript",
+    "esm",
+    "es6",
+    "functional",
+    "programming",
+    "utils",
+    "helpers"
+  ],
+  "////": "/////////========================/////////========================/////////========================/////////"
+}
