@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/isuvorov/fishdash/compare/v0.1.0...v0.1.1) (2025-10-29)
+
+
+### Bug Fixes
+
+* ci ([8215f2b](https://github.com/isuvorov/fishdash/commit/8215f2b399984fe627386fe788da24b7d246ca91))
+
 # [0.1.0](https://github.com/isuvorov/fishdash/compare/v0.0.3...v0.1.0) (2025-10-29)
 
 
