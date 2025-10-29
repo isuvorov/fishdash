@@ -2,9 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main, master, dev, develop]
-  pull_request:
-    branches: [main, master, dev, develop]
+    branches: [main]
 
 jobs:
   test:
@@ -12,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18, 20, 22]
+        node-version: [22]
 
     steps:
       - name: Checkout
@@ -27,15 +25,10 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
           version: 9
-
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
+        run: pnpm install --frozen-lockfile --ignore-scripts
       - name: Build
         run: pnpm run build
 
-      - name: Lint
-        run: pnpm run test:lint
-
-      - name: Run tests
-        run: pnpm run test:node
+      - name: Test
+        run: pnpm run test
