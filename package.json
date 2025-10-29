@@ -24,8 +24,10 @@
     "test:size": "           size-limit",
     "test": "                npm run test:lint && npm run test:node && npm run test:size",
     "test:watch": "          npm run test:node:watch",
+
     "fix:lint": "            biome format --write",
     "fix": "                 npm run fix:lint",
+
     "version:patch": "       npm version patch && git push && git push --tags",
     "version:release": "     semantic-release --no-ci --dry-run ",
     "release": "             npm run build && npm run test && npm run version:release && npm publish"
@@ -160,7 +162,9 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
       "@semantic-release/npm",
+      "@semantic-release/github",
       [
         "@semantic-release/git",
         {
