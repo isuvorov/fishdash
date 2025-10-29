@@ -6,25 +6,38 @@
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
   "private": false,
   "scripts": {
-    "build": "            bunup",
-    "dev": "              bunup --watch",
-    "test:node": "        node --import=tsx --test tests/*.test.ts",
-    "test:node:watch": "  node --import=tsx --test --watch tests/*.test.ts",
-    "test:lint": "        biome check src tests",
-    "lint": "             biome lint src tests",
-    "format": "           biome format --write src tests",
-    "format:check": "     biome format src tests",
-    "test": "             npm run test:lint && npm run test:node",
-    "test:watch": "       npm run test:node:watch",
-    "version:path": "     npm version patch && git push && git push --tags",
-    "version:release": "  semantic-release",
-    "release": "          npm run build && npm run test && npm run version:release && npm publish"
+    "build:tsc": "          rm -rf lib && tsc",
+    "build:tsup": "         tsup",
+    "build:tsdown": "       tsdown",
+    "build:bunup": "        bunup",
+  
+    "build:tsc:release": "  rm -rf lib && tsc --outDir lib",
+    "build": "              npm run build:tsdown",
+    "build:all": "          npm run build:bunup && npm run build:tsup && npm run build:tsdown && npm run build:tsc",
+  
+    "dev": "                tsdown --watch",
+  
+    "test:node": "          node --import=tsx --test tests/*.test.ts",
+    "test:node:watch": "    node --import=tsx --test --watch tests/*.test.ts",
+    "test:lint": "          biome lint",
+    "test:size": "          size-limit",
+    "test": "               npm run test:lint && npm run test:node && npm run test:size",
+    "test:watch": "         npm run test:node:watch",
+    "fix:lint": "           biome format --write",
+    "fix": "                npm run fix:lint",
+    "version:patch": "      npm version patch && git push && git push --tags",
+    "version:release": "    semantic-release --no-ci --dry-run ",
+    "release": "            npm run build && npm run test && npm run version:release && npm publish"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.1",
+    "@size-limit/preset-small-lib": "^11.2.0",
     "@types/node": "^24.9.1",
     "bunup": "^0.15.12",
     "semantic-release": "^25.0.1",
+    "size-limit": "^11.2.0",
+    "tsdown": "^0.15.11",
+    "tsup": "^8.5.0",
     "tsx": "^4.20.6",
     "typescript": "5.9.3"
   },
@@ -139,6 +152,27 @@
       "limit": "1kb"
     }
   ],
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "pnpm-lock.yaml",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): 🎉 v${nextRelease.version}\n\n${nextRelease.notes}\n\n[skip ci]"
+        }
+      ]
+    ]
+  },
   "///": "//////////========================/////////========================/////////========================/////////",
   "repository": {
     "type": "git",
