@@ -6,12 +6,6 @@
       "recommended": true,
       "suspicious": {
         "noExplicitAny": "off"
-      },
-      "style": {
-        "noNonNullAssertion": "off"
-      },
-      "performance": {
-        "noAccumulatingSpread": "off"
       }
     }
   },

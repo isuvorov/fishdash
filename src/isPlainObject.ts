@@ -4,6 +4,7 @@
  * Copyright (c) 2014-2017, Jon Schlinkert.
  * Released under the MIT License.
  */
+// biome-ignore-start lint/suspicious/noPrototypeBuiltins: copied from original source
 
 function isObject(o: any) {
   return Object.prototype.toString.call(o) === '[object Object]';
@@ -21,13 +22,14 @@ export const isPlainObject = (o: any): boolean => {
   // if (isObject(prot) === false) return false;
 
   // If constructor does not have an Object-specific method
-  // eslint-disable-next-line no-prototype-builtins
-  if (Object.hasOwn(prot, 'isPrototypeOf') === false) {
+  if (prot.hasOwnProperty('isPrototypeOf') === false) {
     return false;
   }
 
   // Most likely a plain Object
   return true;
 };
+
+// biome-ignore-end lint/suspicious/noPrototypeBuiltins: copied from original source
 
 export default isPlainObject;
