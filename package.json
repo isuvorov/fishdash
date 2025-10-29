@@ -6,28 +6,29 @@
   "author": "Igor Suvorov <hi@isuvorov.com> (https://github.com/isuvorov)",
   "private": false,
   "scripts": {
-    "build:tsc": "          rm -rf lib && tsc",
-    "build:tsup": "         tsup",
-    "build:tsdown": "       tsdown",
-    "build:bunup": "        bunup",
+    "build:tsc": "           rm -rf lib && tsc",
+    "build:tsup": "          tsup",
+    "build:tsdown": "        tsdown",
+    "build:bunup": "         bunup",
   
-    "build:tsc:release": "  rm -rf lib && tsc --outDir lib",
-    "build": "              npm run build:tsdown",
-    "build:all": "          npm run build:bunup && npm run build:tsup && npm run build:tsdown && npm run build:tsc",
-  
-    "dev": "                tsdown --watch",
-  
-    "test:node": "          node --import=tsx --test tests/*.test.ts",
-    "test:node:watch": "    node --import=tsx --test --watch tests/*.test.ts",
-    "test:lint": "          biome lint",
-    "test:size": "          size-limit",
-    "test": "               npm run test:lint && npm run test:node && npm run test:size",
-    "test:watch": "         npm run test:node:watch",
-    "fix:lint": "           biome format --write",
-    "fix": "                npm run fix:lint",
-    "version:patch": "      npm version patch && git push && git push --tags",
-    "version:release": "    semantic-release --no-ci --dry-run ",
-    "release": "            npm run build && npm run test && npm run version:release && npm publish"
+    "build:tsc:release": "   rm -rf lib && tsc --outDir lib",
+    "build:tsdown:release": "tsdown --out-dir lib",
+    "build": "               npm run build:tsdown:release",
+    "build:all": "           npm run build:bunup && npm run build:tsup && npm run build:tsdown && npm run build:tsc",
+   
+    "dev": "                 tsdown --watch",
+   
+    "test:node": "           node --import=tsx --test tests/*.test.ts",
+    "test:node:watch": "     node --import=tsx --test --watch tests/*.test.ts",
+    "test:lint": "           biome lint",
+    "test:size": "           size-limit",
+    "test": "                npm run test:lint && npm run test:node && npm run test:size",
+    "test:watch": "          npm run test:node:watch",
+    "fix:lint": "            biome format --write",
+    "fix": "                 npm run fix:lint",
+    "version:patch": "       npm version patch && git push && git push --tags",
+    "version:release": "     semantic-release --no-ci --dry-run ",
+    "release": "             npm run build && npm run test && npm run version:release && npm publish"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.1",
