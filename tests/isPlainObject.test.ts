@@ -14,19 +14,14 @@ describe('isPlainObject', () => {
 
   test('should return `false` if the object is not created by the `Object` constructor.', () => {
     function Foo() {
-      // @ts-ignore
       this.abc = {};
     }
-  // eslint-disable-next-line prefer-arrow-callback
-  // @ts-ignore
     assert.ok(!isPlainObject(/foo/));
     assert.ok(!isPlainObject(() => {}));
-    // eslint-disable-next-line prefer-arrow-callback
     assert.ok(!isPlainObject(() => {}));
     assert.ok(!isPlainObject(1));
     assert.ok(!isPlainObject(['foo', 'bar']));
     assert.ok(!isPlainObject([]));
-    // @ts-expect-error
     assert.ok(!isPlainObject(new Foo()));
     assert.ok(!isPlainObject(null));
   });
