@@ -3,8 +3,7 @@
 
 [![NPM version](https://badgen.net/npm/v/fishdash)](https://www.npmjs.com/package/fishdash)
 [![Tests](https://github.com/isuvorov/fishdash/actions/workflows/release.yml/badge.svg)](https://github.com/isuvorov/fishdash/actions/workflows/npm-publish.yml)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-brightgreen.svg)](https://www.typescriptlang.org/)
-[![ESM](https://img.shields.io/badge/ESM-Ready-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+[![TypeScript + ESM](https://img.shields.io/badge/TypeScript-Ready-brightgreen.svg)](https://www.typescriptlang.org/)
 [![Install size](https://packagephobia.now.sh/badge?p=fishdash)](https://packagephobia.now.sh/result?p=fishdash)
 [![Bundle size](https://img.shields.io/bundlephobia/minzip/fishdash.svg)](https://bundlephobia.com/result?p=fishdash)
 [![License](https://badgen.net//github/license/isuvorov/fishdash)](https://github.com/isuvorov/fishdash/blob/master/LICENSE)
