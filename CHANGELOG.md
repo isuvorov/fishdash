@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/isuvorov/fishdash/compare/v0.1.1...v0.2.0) (2025-10-31)
+
+
+### Features
+
+* update configs ([0259e3b](https://github.com/isuvorov/fishdash/commit/0259e3b2cfab3c91955def8eec1cd12a72fd66a4))
+
 ## [0.1.1](https://github.com/isuvorov/fishdash/compare/v0.1.0...v0.1.1) (2025-10-29)
 
 
