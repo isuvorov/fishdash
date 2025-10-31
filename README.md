@@ -12,7 +12,7 @@
 
 
 <div align="center">
-  <p>❤️‍🔥 Modern utility library inspired by Lodash, built with <strong>ESM6</strong> and <strong>TypeScript</strong> ❤️‍🔥</p>
+  <strong>❤️‍🔥 Modern utility library inspired by Lodash, built with  ESM6 and TypeScript</strong>
 </div>
 
 <img src="https://github.com/isuvorov/fishdash/raw/main/docs/logo.png" align="right" width="120" height="120" />
