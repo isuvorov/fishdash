@@ -16,19 +16,12 @@
 
 <img src="https://github.com/isuvorov/fishdash/raw/main/docs/logo.png" align="right" width="120" height="120" />
 
-
-**🚀 Modern**: Built with ESM6 modules and TypeScript
-
-**🪶 Lightweight**: Tree-shakable functions for optimal bundle size
-
-**💪 Type-safe**: Full TypeScript support with comprehensive type definitions
-
-**⚡ Fast**: Optimized algorithms for maximum performance
-
-**🎯 Focused**: Essential utility functions without bloat
-
+**🚀 Modern**: Built with ESM6 modules and TypeScript  
+**🪶 Lightweight**: Tree-shakable functions for optimal bundle size  
+**💪 Type-safe**: Full TypeScript support with comprehensive type definitions  
+**⚡ Fast**: Optimized algorithms for maximum performance  
+**🎯 Focused**: Essential utility functions without bloat  
 **📦 Zero Dependencies**: No external dependencies
-
 
 ```ts
 import { uniqBy } from 'fishdash';
