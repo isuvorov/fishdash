@@ -10,19 +10,19 @@
 [![License](https://badgen.net//github/license/isuvorov/fishdash)](https://github.com/isuvorov/fishdash/blob/master/LICENSE)
 [![Ask me in Telegram](https://img.shields.io/badge/Ask%20me%20in-Telegram-brightblue.svg)](https://t.me/isuvorov)
 
-<img src="https://github.com/isuvorov/fishdash/raw/main/docs/logo.png" align="right" width="120" height="120" />
 
 <div align="center">
-  <p>Modern utility library inspired by Lodash, built with <strong>ESM6</strong> and <strong>TypeScript</strong></p>
+  <p>❤️‍🔥 Modern utility library inspired by Lodash, built with <strong>ESM6</strong> and <strong>TypeScript</strong> ❤️‍🔥</p>
 </div>
 
+<img src="https://github.com/isuvorov/fishdash/raw/main/docs/logo.png" align="right" width="120" height="120" />
 
-- **🚀 Modern**: Built with ESM6 modules and TypeScript
-- **🪶 Lightweight**: Tree-shakable functions for optimal bundle size
-- **💪 Type-safe**: Full TypeScript support with comprehensive type definitions
-- **⚡ Fast**: Optimized algorithms for maximum performance
-- **🎯 Focused**: Essential utility functions without bloat
-- **📦 Zero Dependencies**: No external dependencies
+**🚀 Modern**: Built with ESM6 modules and TypeScript
+**🪶 Lightweight**: Tree-shakable functions for optimal bundle size
+**💪 Type-safe**: Full TypeScript support with comprehensive type definitions
+**⚡ Fast**: Optimized algorithms for maximum performance
+**🎯 Focused**: Essential utility functions without bloat
+**📦 Zero Dependencies**: No external dependencies
 
 
 ```ts
