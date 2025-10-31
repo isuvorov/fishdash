@@ -1,15 +1,16 @@
 # Fishdash
 
-<img src="https://github.com/isuvorov/fishdash/raw/main/docs/logo.png" align="right" width="120" height="120" />
 
 [![NPM version](https://badgen.net/npm/v/fishdash)](https://www.npmjs.com/package/fishdash)
 [![Tests](https://github.com/isuvorov/fishdash/actions/workflows/release.yml/badge.svg)](https://github.com/isuvorov/fishdash/actions/workflows/npm-publish.yml)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-brightgreen.svg)](https://www.typescriptlang.org/)
 [![ESM](https://img.shields.io/badge/ESM-Ready-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 [![Install size](https://packagephobia.now.sh/badge?p=fishdash)](https://packagephobia.now.sh/result?p=fishdash)
 [![Bundle size](https://img.shields.io/bundlephobia/minzip/fishdash.svg)](https://bundlephobia.com/result?p=fishdash)
 [![License](https://badgen.net//github/license/isuvorov/fishdash)](https://github.com/isuvorov/fishdash/blob/master/LICENSE)
 [![Ask me in Telegram](https://img.shields.io/badge/Ask%20me%20in-Telegram-brightblue.svg)](https://t.me/isuvorov)
+
+<img src="https://github.com/isuvorov/fishdash/raw/main/docs/logo.png" align="right" width="120" height="120" />
 
 <div align="center">
   <p>Modern utility library inspired by Lodash, built with <strong>ESM6</strong> and <strong>TypeScript</strong></p>
