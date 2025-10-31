@@ -1,22 +1,20 @@
 # Fishdash
 
+<img src="https://github.com/isuvorov/fishdash/raw/main/docs/logo.png" align="right" width="120" height="120" />
+
 [![NPM version](https://badgen.net/npm/v/fishdash)](https://www.npmjs.com/package/fishdash)
 [![Tests](https://github.com/isuvorov/fishdash/actions/workflows/release.yml/badge.svg)](https://github.com/isuvorov/fishdash/actions/workflows/npm-publish.yml)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![ESM](https://img.shields.io/badge/ESM-Ready-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 [![Install size](https://packagephobia.now.sh/badge?p=fishdash)](https://packagephobia.now.sh/result?p=fishdash)
 [![Bundle size](https://img.shields.io/bundlephobia/minzip/fishdash.svg)](https://bundlephobia.com/result?p=fishdash)
 [![License](https://badgen.net//github/license/isuvorov/fishdash)](https://github.com/isuvorov/fishdash/blob/master/LICENSE)
 [![Ask me in Telegram](https://img.shields.io/badge/Ask%20me%20in-Telegram-brightblue.svg)](https://t.me/isuvorov)
 
 <div align="center">
-  <img src="https://github.com/isuvorov/fishdash/raw/main/docs/logo.png" align="right" width="120" height="120" />
   <p>Modern utility library inspired by Lodash, built with <strong>ESM6</strong> and <strong>TypeScript</strong></p>
 </div>
 
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/fishdash)](https://bundlephobia.com/package/fishdash)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
-[![ESM](https://img.shields.io/badge/ESM-Ready-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-
-## Features
 
 - **🚀 Modern**: Built with ESM6 modules and TypeScript
 - **🪶 Lightweight**: Tree-shakable functions for optimal bundle size
@@ -24,6 +22,16 @@
 - **⚡ Fast**: Optimized algorithms for maximum performance
 - **🎯 Focused**: Essential utility functions without bloat
 - **📦 Zero Dependencies**: No external dependencies
+
+
+```ts
+import { uniqBy } from 'fishdash';
+
+const res = uniqBy([{val: 1}, {val: 2}, {val: 1}], item => item.val);
+```
+
+
+## Features
 
 ## Installation
 
