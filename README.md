@@ -1,4 +1,4 @@
-# Fishdash
+# 🐟 Fishdash
 
 
 [![NPM version](https://badgen.net/npm/v/fishdash)](https://www.npmjs.com/package/fishdash)
