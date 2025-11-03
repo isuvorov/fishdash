@@ -21,7 +21,7 @@
     "test:size": "           size-limit",
     "test": "                npm run test:lint && npm run test:node && npm run test:size",
     "test:watch": "          npm run test:node:watch",
-    "fix:lint": "            biome format --write",
+    "fix:lint": "            biome check --write",
     "fix": "                 npm run fix:lint",
     "version:patch": "       npm version patch && git push && git push --tags",
     "version:release": "     semantic-release --no-ci --dry-run ",

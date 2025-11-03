@@ -6,6 +6,14 @@
       "recommended": true,
       "suspicious": {
         "noExplicitAny": "off"
+      },
+      "correctness": {
+        "useImportExtensions": {
+          "level": "error",
+          "options": {
+            "forceJsExtensions": true
+          }
+        }
       }
     }
   },

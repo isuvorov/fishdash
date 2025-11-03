@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { omit } from '../src';
+import { omit } from '../src/index.js';
 
 describe('omit', () => {
   test('should work with a predicate argument', () => {

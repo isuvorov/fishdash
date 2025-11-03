@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { isPlainObject } from '../src';
+import { isPlainObject } from '../src/index.js';
 
 describe('isPlainObject', () => {
   test('should return `true` if the object is created by the `Object` constructor.', () => {

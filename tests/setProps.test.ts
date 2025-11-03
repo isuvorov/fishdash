@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { setProps } from '../src';
+import { setProps } from '../src/index.js';
 
 describe('setProps', () => {
   test('setProps', () => {

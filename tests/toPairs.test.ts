@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { toPairs } from '../src';
+import { toPairs } from '../src/index.js';
 
 describe('toPairs', () => {
   test('check values', () => {

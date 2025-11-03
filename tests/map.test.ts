@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { map } from '../src';
+import { map } from '../src/index.js';
 
 describe('map', () => {
   test('without mapper', () => {

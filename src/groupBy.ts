@@ -1,4 +1,4 @@
-import type { ObjectMapper } from './types';
+import type { ObjectMapper } from './types.js';
 
 export const groupBy = <T>(arr: Array<T>, filter: ObjectMapper<T>) =>
   arr.reduce(

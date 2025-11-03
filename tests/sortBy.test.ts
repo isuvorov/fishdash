@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { sortBy } from '../src';
+import { sortBy } from '../src/index.js';
 
 describe('sortBy', () => {
   test('empty', () => {

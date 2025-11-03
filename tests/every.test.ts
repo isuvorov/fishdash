@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { every } from '../src';
+import { every } from '../src/index.js';
 
 describe('every', () => {
   test('check values false', () => {

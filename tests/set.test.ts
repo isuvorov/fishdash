@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { set } from '../src';
+import { set } from '../src/index.js';
 
 describe('set', () => {
   test('set flat', () => {

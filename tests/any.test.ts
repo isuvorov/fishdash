@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { any } from '../src';
+import { any } from '../src/index.js';
 
 describe('any', () => {
   test('check value', () => {

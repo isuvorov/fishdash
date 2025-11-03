@@ -1,4 +1,4 @@
-import type { ObjectMapper } from './types';
+import type { ObjectMapper } from './types.js';
 
 export const uniqBy = <T>(arr: Array<T>, mapper: ObjectMapper<T>): Array<T> => {
   const seen = new Set<any>();
@@ -11,7 +11,7 @@ export const uniqBy = <T>(arr: Array<T>, mapper: ObjectMapper<T>): Array<T> => {
     }
   }
   return result;
-}
+};
 // [...new Set(arr.map(mapper))].map((x) => arr.find((y) => mapper(y) === x));
 
 export default uniqBy;

@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { pad } from '../src';
+import { pad } from '../src/index.js';
 
 describe('pad', () => {
   test('empty width', () => {

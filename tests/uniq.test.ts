@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { uniq } from '../src';
+import { uniq } from '../src/index.js';
 
 describe('uniq', () => {
   test('empty', () => {

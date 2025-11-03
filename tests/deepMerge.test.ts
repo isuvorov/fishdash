@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { deepMerge } from '../src';
+import { deepMerge } from '../src/index.js';
 
 describe('deepMerge', () => {
   test('without mapper', () => {

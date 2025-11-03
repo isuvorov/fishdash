@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { groupBy } from '../src';
+import { groupBy } from '../src/index.js';
 
 describe('groupBy', () => {
   test('default', () => {

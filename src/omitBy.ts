@@ -1,4 +1,4 @@
-import pickBy from './pickBy';
+import pickBy from './pickBy.js';
 
 export const omitBy = <T extends Record<string, any>>(
   obj: T,

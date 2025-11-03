@@ -1,7 +1,7 @@
 import * as assert from 'node:assert';
 import { describe, test } from 'node:test';
 
-import { pickBy } from '../src';
+import { pickBy } from '../src/index.js';
 
 describe('pickBy', () => {
   test('should work with a predicate argument', () => {

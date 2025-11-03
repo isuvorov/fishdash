@@ -6,8 +6,8 @@
     "sourceMap": true,
 
     "target": "ES2023",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
 
     "strict": true,
     "skipLibCheck": true,
