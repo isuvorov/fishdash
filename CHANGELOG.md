@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/isuvorov/fishdash/compare/v0.3.0...v0.3.1) (2025-11-06)
+
+
+### Bug Fixes
+
+* add default eslint settings ([ebb7266](https://github.com/isuvorov/fishdash/commit/ebb7266546d964f2ef38b18d652be690c845dff7))
+
 # [0.3.0](https://github.com/isuvorov/fishdash/compare/v0.2.0...v0.3.0) (2025-11-03)
 
 
